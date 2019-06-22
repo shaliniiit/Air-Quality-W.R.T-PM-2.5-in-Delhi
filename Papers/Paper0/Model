@@ -1,0 +1,8 @@
+The main idea of this work is based on embedding feature selection and spatio-temporal semi-supervised learning simultaneously in different layers of the deep learning net-
+work. Considering the topics of interpolation and prediction both as the classification problem with different outputs, we use a general multiple-output classifier to solve the two
+topics. In this paper we propose a novel deep learning network as the multiple-output classifier which utilizes the information pertaining to the unlabeled spatio-temporal
+data not only to achieve the purpose of interpolation, but also to improve the performance of the prediction. Further,the main relevant features to the variation of the air quality
+can also be revealed by embedding feature selection and performing association analysis in the proposed framework.We begin with describing the data representations and
+symbols used in this work, then introduce the method to embed feature selection in the neural network.
+
+Look up Section 3 of the paper.
