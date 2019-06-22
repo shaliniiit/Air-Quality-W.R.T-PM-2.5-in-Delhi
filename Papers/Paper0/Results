@@ -1,0 +1,30 @@
+For feature selection, we describe the number of features selected by DAL as a function of λ1 in Figure 7(a), and the RMSE on the testing set using DAL as a function of
+λ1 in Figure 7(b) when α = β = 0. From Figure 7(a) we observe that the number of features selected by DAL decreases as the parameter λ1 increases, which indicates the
+effectiveness of feature selection by the extra sparse layer.The mean activation of node j in the extra sparse layer over the whole training set is defined as MAj =
+1mPmi=1 a(1)(i)j.
+In the experiments, the range of MAj (j = 1, ..., s1) is in [8.5906e−140, 1] after the training when λ1 = 3. Thejth feature is removed from the network when MAj is
+very small. Here the feature selection can remove the least important features from the deep networks without decreasing the prediction accuracy a lot. The input features
+in our experiments are different air pollution data and meteorological data, which are all related to the prediction of the PM2.5’s concentration. The feature selection keeps
+the major features, while removes the minor features, with the smallest decline of the predictor’s performance, which reveals the importance of different input features of the
+black-box model. From Figure 7(b) we observe that, when λ1 = 2, there are 133 features removed from the feature space, while the RMSE only increases 0.0013. To make a
+comparison, we remove 133 features randomly from the feature space 5 times, and train the model using the left features. The RMSE increases 0.0041 on average, which
+is much larger than that of the feature selection method,indicating that the extra sparse layer truly selects the most relevant features to the target during the training in the
+proposed model.
+
+                                    ROOT MEAN SQUARE ERROR (RMSE)
+                                    Interpolation                       Prediction
+                                    Hour 0                              Hour 1-12     Hour 13-24    Hour 25-36    Hour 3-48
+                           DAL      0.0667                              0.0667        0.0724        0.0797        0.0877
+                          
+                         
+This paper studies three important topics in the area of urban air computing: the interpolation, prediction, and feature analysis of fine-gained air quality. The solutions to these
+topics can provide crucial information to support air pollution control, and consequently generate great societal and technical impacts. Most existing efforts focus on solving the
+three problems separately by establishing different models.In this paper, we develop a general and effective approach called DAL to unify the interpolation, prediction, feature
+selection and analysis of the fine-grained air quality into one model. In order to improve the performance of interpolation and prediction, we utilize the intrinsic characteristics of
+the spatio-temporal data and the information contained in the unlabeled data by embedding spatio-temporal semisupervised learning on the output layer of neural network.
+
+We also propose a novel method to perform feature selection in the input layer of neural network, whose optimization is easy to solve and performance is well in removing the
+redundant or irrelevant features. Combining with feature selection, association analysis discovers the importance of different input features to the predictions of the neural net-
+works. The proposed feature selection and analysis method has the ability to reveal some inner mechanism of the black-box deep network models. Extensive experiments are con-
+ducted on real data sources collected from Beijing, China,showing that DAL is superior to the comparison rivals when solving the topics of interpolation, prediction, and feature
+analysis of fine-gained air quality.
