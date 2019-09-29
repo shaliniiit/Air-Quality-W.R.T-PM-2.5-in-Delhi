@@ -1,0 +1,15 @@
+Error Log:
+CNN model
+**Error
+--Cause
+1.
+**Value Error in NNmodel_fit:
+--NA in c.csv first row
+2.
+**TypeError in NNmodel_fit
+--yet to resolve
+3.XGBoost regressor no matching distribution 
+--yet to resolve
+--another regressor used
+4**XGBoost regreesor Connection Timed out
+--Proxy error
